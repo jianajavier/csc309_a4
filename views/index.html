@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="./js/script.js" type="text/javascript"></script>
+        <meta charset="utf-8">
+        <title>A4</title>
+    </head>
+    <img src="css/a4logo.png" id="logo"/>
+    <div id="topbar">
+      <div class = "thumbnailholder">
+        <img src="css/default_profile_large.jpg" id="miniprofilepicture"/>
+      </div>
+      <h3 id="profilelink"></h3>
+      <h2 id="pagetitle"></h2>
+      <button id=logout>Logout</button>
+      <button id="viewbehaviour">View User Behaviour</button>
+    </div>
+    <div class="wrapper">
+      <button id="loginbutton">Login</button>
+      <button id="signupbutton">Sign-up</button>
+    </div>
+    <div id="rectangle">
+      <h1 id="loginheader">Login</h1>
+      <h1 id="signupheader">Sign-up</h1>
+      <label for="emailinput">E-mail: </label>
+      <input type="text" id="emailinput" placeholder="E-mail"/>
+      <label for="passwordinput">Password: </label>
+      <input type="password" id="passwordinput" placeholder="Password"/>
+      <label for="cpasswordinput" id="cpasslabel">Confirm Password: </label>
+      <input type="password" id="cpasswordinput" placeholder="Password"/>
+      <label id="errormessage"></label>
+      <label id="go">></label>
+    </div>
+    <div id="homepage">
+      <table id="usertable">
+        <tr>
+          <th>User e-mail</th>
+          <th>Display name</th>
+        </tr>
+      </table>
+    </div>
+    <div id="profilepage">
+      <h3 id="displayname"></h3>
+      <img src="css/default_profile_large.jpg" id="profilepicture"/>
+      <p id="description"></p>
+      <h3 id ="profileemail"></h3>
+      <button id="toggleadmin"></button>
+      <button id="edituser">Edit user</button>
+      <button id="deleteuser">Delete user</button>
+    </div>
+    <div id = "editprofilepage">
+      <form enctype="multipart/form-data">
+        <input id="choosepic" type="file" name ="pic"/>
+      </form>
+      <div class="imageholder">
+        <img src="css/default_profile_large.jpg" id="editprofilepicture"/>
+      </div>
+      <input type="text" id="editemail" readonly>e-mail: </input>
+      <input type="text" id="editdisplayname">display name: </input>
+      <label for="editdescription" id="deslabel">description: </label>
+      <textarea maxlength="500" rows="5" cols = "40" wrap="hard" id="editdescription"></textarea>
+      <button id="updatebutton">Update</button>
+      <button id="cancelbutton">Cancel</button>
+      <div id="changepasswordsection">
+        <h1 id="changepassheader">Change Password</h1>
+        <input type="password" id="oldpass">old password: </input>
+        <input type="password" id="newpass">new password: </input>
+        <input type="password" id="confirmpass">confirm password: </input>
+        <button id="changepassbutton">Change Password</button>
+      </div>
+      <div id="editalert">
+        <label id="editmessage"></label>
+      </div>
+    </div>
+    <div id="userbehaviourpage">
+      <table id="behaviourtable">
+        <tr>
+          <th>User e-mail</th>
+          <th>User Behaviour</th>
+        </tr>
+      </table>
+    </div>
+</html>

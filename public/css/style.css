@@ -1,0 +1,450 @@
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica";
+  font-weight: lighter;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9f8cf2+0,d69eed+51,ffddf8+100 */
+  background: #9f8cf2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #9f8cf2 0%, #d69eed 51%, #ffddf8 100%); /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  #9f8cf2 0%,#d69eed 51%,#ffddf8 100%); /* Chrome10+,Safari5.1+ */
+  background: -ms-linear-gradient(top,  #9f8cf2 0%,#d69eed 51%,#ffddf8 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f8cf2', endColorstr='#ffddf8',GradientType=0 ); /* IE6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#logo {
+  position:absolute;
+  z-index: 9999;
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+
+.wrapper {
+    text-align: center;
+    margin:auto;
+}
+
+button {
+  position:relative;
+  top: 420px;
+  display:inline-block;
+
+	-moz-box-shadow:inset 0px 0px 24px 3px #9e74b0;
+	-webkit-box-shadow:inset 0px 0px 24px 3px #9e74b0;
+	box-shadow:inset 0px 0px 24px 3px #9e74b0;
+	background-color:transparent;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #aa7dbd;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Helvetica;
+  font-weight: lighter;
+	font-size:17px;
+	padding:10px 19px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #a06fb5;
+}
+button:hover {
+	background-color:transparent;
+}
+button:active {
+	position:relative;
+	top:421px;
+}
+
+:focus {
+  outline:none;
+} ::-moz-focus-inner {border:0;}
+
+#topbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 110px;
+  background: rgba(255,255,255,0.2);
+
+}
+
+/* For the login and signup component */
+#rectangle {
+    position: absolute;
+    top:120px;
+    margin-left:34%;
+    width:500px;
+    height:300px;
+    background:white;
+    opacity:0.6;
+}
+
+#loginheader, #signupheader {
+  position:absolute;
+  margin-left: 15px;
+}
+
+h1 {
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  position:absolute;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 35px;
+  color: white;
+}
+
+h3 {
+  position:absolute;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 17px;
+  color:rgba(255,255,255,1);
+  right: 20px;
+  top:23px;
+}
+
+#emailinput, #passwordinput, #cpasswordinput {
+  position:relative;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 16px;
+  color: black;
+  display:inline-block;
+  margin-top: 55px;
+  margin-left:30px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: black;
+}
+
+label {
+  display:inline-block;
+  font-size: 16px;
+  margin-left:70px;
+  margin-right:10px;
+}
+
+input {
+  color:darkgrey;
+  width: 220px;
+}
+
+#go {
+  display:block;
+  position:absolute;
+  bottom: 0px;
+  right:5px;
+  margin-top: 3%;
+  margin-left:0px;
+  margin-right:0px;
+  font-size:35pt;
+}
+
+#errormessage {
+  text-align: center;
+  position: relative;
+  font-style: italic;
+  margin-top: 50px;
+  margin-left:20px;
+  font-size: 10pt;
+}
+
+#homepage {
+  top:0px;
+  left: 0px;
+}
+
+#pagetitle {
+  top: 120px;
+  left: 150px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, .1);
+    border-collapse: collapse;
+    color: white;
+    width: 80%;
+}
+th, td {
+    padding: 10px;
+}
+
+#usertable {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  margin-bottom: 50px;
+}
+
+#profilepicture, #miniprofilepicture {
+  position:absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width:300px;
+  max-height:300px;
+  left: 40%;
+  top: 250px;
+  border:3px solid white;
+}
+#miniprofilepicture {
+position:absolute;
+	left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+/*want to set it to the left of the profilelink*/
+}
+
+#profilelink {
+	background:rgba(0,0,0,0.2);
+	padding: 7.5px;
+	width:300px;
+
+}
+
+
+#displayname {
+	position:absolute;
+	top:175px;
+	left:40%
+}
+
+p {
+	position:absolute;
+	top:550px;
+	width:30%;
+	left:33%;
+	background-color:rgba(255,255,255,0.5);
+	padding:10px;
+	text-align:center;
+	margin-bottom:100px;
+}
+
+#profileemail {
+	position:absolute;
+	top:210px;
+	left:40%;
+	font-size:14px;
+	background:rgba(0,0,0,0.2);
+	width:410px;
+}
+
+
+/*#editprofilepicture {
+	position:absolute;
+	width: 210px;
+	height:210px;
+	top: 50px;
+	left: 500px;
+	height: 100%;
+  	width: auto;
+ 	 -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}*/
+
+.imageholder {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  left: -300px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: white;
+}
+
+.thumbnailholder {
+	position:absolute;
+	border:1px solid white;
+	top:40px;
+	left:97%;
+	z-index:1;
+	width:33px;
+	height:33px;
+	border:1px solid white;
+	overflow: hidden;
+}
+
+#editprofilepicture {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+#editemail, #editdescription, #editdisplayname, #oldpass, #newpass, #confirmpass {
+	position:relative;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  font-size: 14px;
+  color: black;
+  display:block;
+  margin-top:20px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: black;
+  text-align:left;
+  top: -00px;
+}
+
+#editdescription {
+  height:300px;
+  width:300px;
+  margin-top:50px;
+  border-width: 1px 1px 1px 1px;
+  resize:none;
+
+}
+
+#editprofilepage {
+  display: table-cell;
+  vertical-align: middle;
+  position:absolute;
+  left: 38%;
+  top: 200px;
+  width: 800px;
+}
+
+#changepassheader {
+	margin-top: 40px;
+}
+
+#updatebutton, #cancelbutton,#toggleadmin, #edituser,#deleteuser, #logout, #viewbehaviour {
+	top: 10px;
+	margin-top: 40px;
+  border-radius:8px;
+  font-family:Helvetica;
+  font-weight: lighter;
+  font-size:12px;
+  color:transparent;
+  background-color:white;
+  border:0px;
+  	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+  margin-bottom: 50px;
+}
+#toggleadmin {
+	position:absolute;
+	top: 210px;
+	left:73%;
+	/*left: 59%;*/
+}
+
+#changepassbutton {
+	top:80px;
+	left: -140px;
+	margin-bottom: 100px;
+	border:1px solid #aa7dbd;
+	border-radius:8px;
+	font-family:Helvetica;
+  font-weight: lighter;
+  font-size:12px;
+  color:transparent;
+  background-color:white;
+  border:0px;
+    -moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  box-shadow:inset 0px 0px 0px 0px #ffffff;
+}
+
+#deslabel {
+	position:absolute;
+	top: 168px;
+	left:-70px;
+}
+
+#choosepic {
+  visibility: hidden;
+}
+#editalert {
+    position: fixed;
+    top:35%;
+    margin-left:0%;
+    width:305px;
+    height:60px;
+    background:white;
+    opacity:0.8;
+}
+#editmessage {
+	position:fixed;
+	margin-top: 20px;
+	margin-left:0%;
+	text-align:center;
+	width:inherit;
+}
+
+
+#edituser, #deleteuser {
+	display: block;
+	margin-top:5px;
+	position:absolute;
+	top: 290px;
+	left:73%;
+}
+#deleteuser {
+	top: 330px;
+}
+
+#logout {
+	position:absolute;
+	top:52px;
+	right:7px;
+}
+
+#viewbehaviour {
+	position:absolute;
+	top:52px;
+	right:90px;
+}
+
+#profilepage {
+	position:absolute;
+	left: 8%;
+	margin-left:auto;
+    margin-right:auto;
+    width:960px;
+    height:100%;
+}
+#description {
+	width :425px;
+}
+
+#behaviourtable {
+	position:absolute;
+	top: 210px;
+	left:10%;
+}
+
+
+td:first-child, th:first-child {
+    width: 30%;
+}
